@@ -7,15 +7,19 @@ function show_results(){
 ?>
 <!-- Start Modal -->
     <div class="searchModal">
+
         <div class="modalHeader container">
-            <h2>
-                <?php 
-                if($results->search_data()){ ?>
+        <h2>
+        <?php 
+            if($results->search_data()){ ?>    
+                
                     Checkout these <?php echo $_GET['userQuery'] ? ucfirst($_GET['userQuery']) : 'aweseome' ?> GIFs
-                    <?php }else{ ?> Sorry but your search came up with no results <?php }?>
+                
+            <?php } ?> 
             </h2>
             <span title="Close" class="closeModal"><i class="fa-solid fa-xmark"></i></span>
         </div>
+
         <div class="modalContent container">
         <?php
             // If the API Call returns data
@@ -24,22 +28,25 @@ function show_results(){
                 $gifs = $results->search_data();
         ?>
     
-        <div class="searchSlider">
+                <div class="searchSlider">
 
-            <?php
-                foreach($gifs as $gif){
-                    
-                    $gifImages = $gif['images'];
-                    echo card($gifImages['fixed_width']['webp'], $gif['title'],$gifImages['original']['webp'], true);
-                
-                }
+                        <?php
+                            foreach($gifs as $gif){
+                                
+                                $gifImages = $gif['images'];
+                                echo card($gifImages['fixed_height']['webp'], $gif['title'],$gifImages['original']['webp'], true);
+                            
+                            }
 
-            ?>
+                        ?>
 
-        </div>
+                </div>
             
         <?php 
 
+            }else{
+
+                echo '<h2 class="noResults">I\'m afraid your search came up with no results try a more simple search</h2>';
             }
 
             ?>

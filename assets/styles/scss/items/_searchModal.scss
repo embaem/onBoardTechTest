@@ -31,6 +31,13 @@
 
     .modalContent{
         margin-top: 20px;
+        .noResults{
+            height: 300px;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .searchSlider{
             .sliderRow{
                 margin-bottom: 2%;

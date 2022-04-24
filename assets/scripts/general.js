@@ -14,15 +14,7 @@ $(document).ready(function(){
         dots:true,
         mobileFirst: true,
         responsive:[
-            {
-                breakpoint: 600,
-                settings: {
-                    // rows:1,
-                    // slidesPerRow:3,
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-              },
+            
               {
                 breakpoint: 1024,
                 settings: {
@@ -43,20 +35,9 @@ $(document).ready(function(){
         dots:true,
         mobileFirst: true,
         responsive:[
-            {
-                breakpoint: 600,
-                settings: {
-                    // rows:1,
-                    // slidesPerRow:3,
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-              },
               {
                 breakpoint: 1024,
                 settings: {
-                    // rows:1,
-                    // slidesPerRow:1,
                   slidesToShow: 3,
                   slidesToScroll: 3
                 }

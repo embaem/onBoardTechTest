@@ -5,6 +5,10 @@
     h2{
         margin-left: 3em;
         padding-bottom: 1em;
+        @include breakpoint('phablet'){
+            margin-left: 2em;
+            font-size: 1.75em;
+        }
     }
 
     .trendingSlider{

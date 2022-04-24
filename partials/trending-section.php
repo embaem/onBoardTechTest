@@ -13,7 +13,7 @@ $results = new Api();?>
 
         ?>
                 <h2>Take A Look at What's Trending</h3>
-                <div class="trendingSlider" data-slick='{"slidesToShow":3,"slidesToScroll":3, "arrows":true, "dots":true}'>
+                <div class="trendingSlider">
         
                     <?php
                         foreach($gifs as $gif){
