@@ -155,7 +155,7 @@ footer {
       margin: 10px auto;
       border: white solid;
       border-radius: 50px;
-      appearance: none; }
+      -webkit-appearance: none; }
       .searchSection #giphSearch select:focus-visible {
         box-shadow: 0px 0px 10px 5px #FFFFFF; }
     .searchSection #giphSearch fieldset {
