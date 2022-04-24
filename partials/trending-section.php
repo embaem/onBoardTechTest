@@ -16,12 +16,11 @@ $results = new Api();?>
                 <div class="trendingSlider" data-slick='{"slidesToShow":3,"slidesToScroll":3, "arrows":true, "dots":true}'>
         
                     <?php
-                        $count = 0;
                         foreach($gifs as $gif){
                             
                             $gifImages = $gif['images'];
-                            echo card($gifImages['fixed_height']['url'], $gif['title'], $gifImages['original']['url'], true);
-                            $count++;
+                            echo card($gifImages['fixed_height']['webp'], $gif['title'], $gifImages['original']['webp'], true);
+                            
                         }
         
                     ?>
@@ -30,11 +29,6 @@ $results = new Api();?>
         
         <?php 
         
-            // If API Call doesn't return anything 
-            }else{
-        
-                echo 'Sorry but your search came up with no results';
-                
             }
 
             ?>

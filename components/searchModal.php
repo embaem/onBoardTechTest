@@ -8,7 +8,12 @@ function show_results(){
 <!-- Start Modal -->
     <div class="searchModal">
         <div class="modalHeader container">
-            <h2>Checkout these <?php echo $_GET['userQuery'] ? ucfirst($_GET['userQuery']) : 'aweseome' ?> GIFs</h2>
+            <h2>
+                <?php 
+                if($results->search_data()){ ?>
+                    Checkout these <?php echo $_GET['userQuery'] ? ucfirst($_GET['userQuery']) : 'aweseome' ?> GIFs
+                    <?php }else{ ?> Sorry but your search came up with no results <?php }?>
+            </h2>
             <span title="Close" class="closeModal"><i class="fa-solid fa-xmark"></i></span>
         </div>
         <div class="modalContent container">
@@ -22,12 +27,11 @@ function show_results(){
         <div class="searchSlider">
 
             <?php
-                $count = 0;
                 foreach($gifs as $gif){
                     
                     $gifImages = $gif['images'];
-                    echo card($gifImages['fixed_width']['url'], $gif['title'],$gifImages['original']['url'], true);
-                    $count++;
+                    echo card($gifImages['fixed_width']['webp'], $gif['title'],$gifImages['original']['webp'], true);
+                
                 }
 
             ?>
@@ -36,11 +40,6 @@ function show_results(){
             
         <?php 
 
-            // If API Call doesn't return anything 
-            }else{
-
-                echo 'Sorry but your search came up with no results';
-                
             }
 
             ?>

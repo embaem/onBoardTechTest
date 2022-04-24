@@ -20,6 +20,6 @@
     <body>
         <!-- Header Container - Site Name/Logo and Menu -->
       <header id="main-header" class="container flexContainer">
-          <img class="logoImg" alt="EMA Web Logo" src="<?php echo URL .'/assets/images/logoiconweb.png'?>" />
+          <img class="logoImg" loading="lazy" alt="EMA Web Logo" src="<?php echo URL .'/assets/images/logoiconweb.png'?>" />
       </header>
    

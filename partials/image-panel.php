@@ -1,6 +1,6 @@
 <div class="imagePanel"> 
 
-    <img alt="" class="imagePanelImage" src=""/>
+    <img loading="lazy" alt="" class="imagePanelImage" src=""/>
     <span class="controlContainer">
         <a title="Copy Link" class="imagePanelCopyLink" target="_blank" href="">
             <i class="fa-solid fa-link"></i>
