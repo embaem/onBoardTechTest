@@ -1,0 +1,22 @@
+body{
+    font-family: $body-font-family;
+    background-color: $primary;
+}
+
+.container{
+    margin: 25px 50px;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+  /* the slides */
+  .slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -27px;
+}

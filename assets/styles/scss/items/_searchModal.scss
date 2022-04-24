@@ -1,0 +1,65 @@
+
+
+.searchModal{
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    z-index: 99;
+    background-color: $primary;
+    border-radius: 15px;
+    top: 10%;
+    box-shadow: 5px 5px 15px 5px white;
+
+    .modalHeader{
+        color: white;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $primary;
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            margin: 1em 2em;
+        }
+        
+        .closeModal{
+            font-size: 200%;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+    }
+
+    .modalContent{
+        margin-top: 20px;
+        .searchSlider{
+            .sliderRow{
+                margin-bottom: 2%;
+                text-align: center;
+            }
+            .slick-list{
+                padding:50px 0px;
+            }
+            .slick-prev{
+                left:-28px;
+                &:before{
+                    font-size:50px;
+                }
+            }
+            .slick-next{
+                right:1em;
+                &:before{
+                    font-size:50px;
+                }
+            }
+            .slick-dots{
+                bottom: 1px;
+                button{
+                    &:before{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+
+}

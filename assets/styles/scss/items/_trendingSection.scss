@@ -1,0 +1,21 @@
+.trendingSection{
+    background-color: white;
+    padding: 3em 0 6em 0;
+    
+    h2{
+        margin-left: 3em;
+        padding-bottom: 1em;
+    }
+
+    .trendingSlider{
+        .slick-dots{
+            bottom: -70px;
+        }
+        .slick-next, .slick-prev{
+            &:before{
+                color: $primary;
+                font-size: 45px;
+            }
+        }
+    }
+  }

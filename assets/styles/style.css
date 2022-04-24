@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url(./node_modules/lightbox2/src/css/lightbox.css);
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #000032; }
+
+.container {
+  margin: 25px 50px; }
+
+.flexContainer {
+  display: flex; }
+
+/* the slides */
+.slick-slide {
+  margin: 0 27px; }
+
+/* the parent */
+.slick-list {
+  margin: 0 -27px; }
+
+header {
+  margin-top: 1em; }
+  header .logoImg {
+    justify-self: center; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2em; }
+  footer .giphyLogo {
+    box-shadow: 0px 0px 17px 10px #FFFFFF;
+    margin: 1em; }
+
+.searchModal {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  z-index: 99;
+  background-color: #000032;
+  border-radius: 15px;
+  top: 10%;
+  box-shadow: 5px 5px 15px 5px white; }
+  .searchModal .modalHeader {
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #000032;
+    display: flex;
+    justify-content: space-between; }
+    .searchModal .modalHeader h2 {
+      margin: 1em 2em; }
+    .searchModal .modalHeader .closeModal {
+      font-size: 200%;
+      border-radius: 50px;
+      cursor: pointer; }
+  .searchModal .modalContent {
+    margin-top: 20px; }
+    .searchModal .modalContent .searchSlider .sliderRow {
+      margin-bottom: 2%;
+      text-align: center; }
+    .searchModal .modalContent .searchSlider .slick-list {
+      padding: 50px 0px; }
+    .searchModal .modalContent .searchSlider .slick-prev {
+      left: -28px; }
+      .searchModal .modalContent .searchSlider .slick-prev:before {
+        font-size: 50px; }
+    .searchModal .modalContent .searchSlider .slick-next {
+      right: 1em; }
+      .searchModal .modalContent .searchSlider .slick-next:before {
+        font-size: 50px; }
+    .searchModal .modalContent .searchSlider .slick-dots {
+      bottom: 1px; }
+      .searchModal .modalContent .searchSlider .slick-dots button:before {
+        color: white; }
+
+.card .cardDark {
+  background-color: #000032;
+  color: white; }
+
+.card .cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10%;
+  border-radius: 10px;
+  padding-top: 25px;
+  box-shadow: 0px 0px 17px 10px #FFFFFF; }
+  .card .cardContainer .imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer; }
+  .card .cardContainer .cardTitle {
+    text-align: center;
+    padding: 0px 10px; }
+
+.searchSection {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .searchSection #giphSearch {
+    width: 50%;
+    margin: auto;
+    text-align: center; }
+    .searchSection #giphSearch label {
+      color: white; }
+    .searchSection #giphSearch input[type="search"] {
+      color: white;
+      background-color: transparent;
+      padding: 14px;
+      width: 70%;
+      border-radius: 50px;
+      box-shadow: 0px 0px 10px 5px #FFFFFF; }
+      .searchSection #giphSearch input[type="search"]::placeholder {
+        color: white; }
+      .searchSection #giphSearch input[type="search"]:focus-visible {
+        box-shadow: 0px 0px 15px 10px #FFFFFF; }
+    .searchSection #giphSearch input[type="image"] {
+      width: 40px;
+      height: 40px;
+      margin-left: 2em; }
+    .searchSection #giphSearch input[type="number"] {
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      border: white solid;
+      border-radius: 50px;
+      background-color: transparent;
+      color: white; }
+      .searchSection #giphSearch input[type="number"]:focus-visible {
+        box-shadow: 0px 0px 10px 5px #FFFFFF; }
+    .searchSection #giphSearch select {
+      background-color: transparent;
+      color: white;
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      border: white solid;
+      border-radius: 50px; }
+      .searchSection #giphSearch select:focus-visible {
+        box-shadow: 0px 0px 10px 5px #FFFFFF; }
+    .searchSection #giphSearch fieldset {
+      border: none; }
+    .searchSection #giphSearch .userSearch {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    .searchSection #giphSearch .advancedSearch {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%; }
+      .searchSection #giphSearch .advancedSearch .formElementContainer {
+        display: flex;
+        flex-direction: column; }
+    .searchSection #giphSearch .advancedButton {
+      color: white;
+      margin: 20px; }
+
+.trendingSection {
+  background-color: white;
+  padding: 3em 0 6em 0; }
+  .trendingSection h2 {
+    margin-left: 3em;
+    padding-bottom: 1em; }
+  .trendingSection .trendingSlider .slick-dots {
+    bottom: -70px; }
+  .trendingSection .trendingSlider .slick-next:before, .trendingSection .trendingSlider .slick-prev:before {
+    color: #000032;
+    font-size: 45px; }
+
+.imagePanel {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 50, 0.75);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  top: 0; }
+  .imagePanel .imagePanelImage {
+    box-shadow: 0px 0px 17px 10px #FFFFFF; }
+  .imagePanel .controlContainer {
+    margin-top: .5em;
+    align-items: center;
+    width: 25%;
+    color: white;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-between; }
+    .imagePanel .controlContainer a {
+      color: white;
+      text-decoration: none; }
+    .imagePanel .controlContainer .imagePanelClose {
+      cursor: pointer; }

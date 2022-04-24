@@ -1,0 +1,17 @@
+{
+  "name": "onbrandtechtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/styles/scss -o assets/styles"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lightbox2": "^2.11.3",
+    "node-sass": "^7.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
