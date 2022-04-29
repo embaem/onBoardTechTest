@@ -1,7 +1,7 @@
 <?php
 class Api{
 
-        static $APIKey = 'z9wM59bjtVvTN8r9tMaGIjDfPkARfILX';
+        static $APIKey = 'JDpPHYsPUvcNSczyArujcwGJeOX4sKwY';
 
         function callAPI($url ){
             $curl = curl_init();
